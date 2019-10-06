@@ -4,11 +4,11 @@ using MahApps.Metro.Controls;
 namespace Melody
 {
   /// <summary>
-  /// Interaction logic for MainWindow.xaml.
+  /// Interaction logic for LogInWindow.xaml.
   /// </summary>
-  public partial class MainWindow : MetroWindow
+  public partial class LogInWindow : MetroWindow
   {
-    public MainWindow()
+    public LogInWindow()
     {
       this.InitializeComponent();
     }
