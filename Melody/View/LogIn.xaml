@@ -1,0 +1,35 @@
+﻿<Controls:MetroWindow x:Class="Melody.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Melody"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="Melody" Height="439.616" Width="516.878" MinHeight="200" MinWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition  Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="0"  Content="Login:"/>
+            <TextBox Grid.Column="1" Grid.Row="0"  Height="23" MinWidth="100" TextWrapping="Wrap" Text="TextBox"/>
+            <Label Grid.Column="0" Grid.Row="1"  Content="Password:"/>
+            <TextBox Grid.Column="1" Grid.Row="1"  Height="23" MinWidth="100" TextWrapping="Wrap" Text="TextBox"/>
+        </Grid>
+        <StackPanel  Grid.Row="1" >
+            <Button Content="Button" HorizontalAlignment="Left" Margin="74,57.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="74,57.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="74,57.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
