@@ -6,9 +6,9 @@ namespace Melody.View
   /// <summary>
   /// Interaction logic for MainWindow.xaml.
   /// </summary>
-  public partial class MainWindow : MetroWindow
+  public partial class Main : MetroWindow
   {
-    public MainWindow()
+    public Main()
     {
     }
 
@@ -19,14 +19,14 @@ namespace Melody.View
 
     private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
     {
-      ButtonOpenMenu.Visibility = Visibility.Collapsed;
-      ButtonCloseMenu.Visibility = Visibility.Visible;
+      this.ButtonOpenMenu.Visibility = Visibility.Collapsed;
+      this.ButtonCloseMenu.Visibility = Visibility.Visible;
     }
 
     private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
     {
-      ButtonOpenMenu.Visibility = Visibility.Visible;
-      ButtonCloseMenu.Visibility = Visibility.Collapsed;
+      this.ButtonOpenMenu.Visibility = Visibility.Visible;
+      this.ButtonCloseMenu.Visibility = Visibility.Collapsed;
     }
   }
 }
