@@ -76,9 +76,7 @@ namespace Melody.ViewModel
         DependencyObject sender,
         DependencyPropertyChangedEventArgs e)
     {
-      PasswordBox passwordBox = sender as PasswordBox;
-
-      if (passwordBox == null)
+      if (!(sender is PasswordBox passwordBox))
       {
         return;
       }
