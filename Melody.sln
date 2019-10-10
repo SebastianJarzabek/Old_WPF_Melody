@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Melody", "Melody\Melody.csproj", "{34C4FB3F-EDD3-4A2E-BECA-47043F5E8552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Melody.Tests", "Melody.Tests\Melody.Tests.csproj", "{B1679E0E-3197-449C-984E-A3074CB61F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Melody.Service", "Melody.Service\Melody.Service.csproj", "{26D56B87-2436-4259-A3C6-D825FEC6532B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{34C4FB3F-EDD3-4A2E-BECA-47043F5E8552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34C4FB3F-EDD3-4A2E-BECA-47043F5E8552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34C4FB3F-EDD3-4A2E-BECA-47043F5E8552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1679E0E-3197-449C-984E-A3074CB61F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1679E0E-3197-449C-984E-A3074CB61F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1679E0E-3197-449C-984E-A3074CB61F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1679E0E-3197-449C-984E-A3074CB61F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D56B87-2436-4259-A3C6-D825FEC6532B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D56B87-2436-4259-A3C6-D825FEC6532B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D56B87-2436-4259-A3C6-D825FEC6532B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D56B87-2436-4259-A3C6-D825FEC6532B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
