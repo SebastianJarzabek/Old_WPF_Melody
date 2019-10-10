@@ -7,9 +7,9 @@ namespace Melody.Service.Dbo
 {
   class DboConnect : IDboConnect
   {
-    private readonly IConfigService cfg;
+    private readonly IConfigServices cfg;
 
-    public DboConnect(IConfigService configService)
+    public DboConnect(IConfigServices configService)
     {
       if (configService != null)
       {
@@ -25,7 +25,8 @@ namespace Melody.Service.Dbo
     {
       try
       {
-        using (SqlConnection connection = new SqlConnection(cfg.ConnectionString))
+        ////Error 
+        using (SqlConnection connection = new SqlConnection(cfg.GetConnectionString()))
         {
           return connection;
         }

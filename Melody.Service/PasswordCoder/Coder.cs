@@ -11,10 +11,10 @@ namespace Melody.Service.PasswordCoder
       this._passwordToCode = password;
     }
 
-    public string CodePassword(string password)
+    public string CodePassword()
     {
-      var _passwordToCode = System.Text.Encoding.UTF8.GetBytes(password);
-      return System.Convert.ToBase64String(_passwordToCode);
+      var password = System.Text.Encoding.UTF8.GetBytes(_passwordToCode);
+      return System.Convert.ToBase64String(password);
     }
   }
 }

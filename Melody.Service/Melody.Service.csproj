@@ -45,8 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigService\ConfigService.cs" />
-    <Compile Include="ConfigService\Interfaces\IConfigService.cs" />
+    <Compile Include="ConfigService\ConfigServices.cs" />
+    <Compile Include="ConfigService\Interfaces\IConfigServices.cs" />
     <Compile Include="Dbo\DboConnect.cs" />
     <Compile Include="Dbo\Interfaces\IDboConnect.cs" />
     <Compile Include="Logic\AccessParms.cs" />

@@ -12,7 +12,7 @@ namespace Melody.Service.Logic
 
     public AppAccess(IDboConnect dboConnect, ISqlExecute sqlExecute)
     {
-      if (dboConnect != null)
+      if (dboConnect != null && sqlExecute != null)
       {
         this._connect = dboConnect;
         this._sqlExecute = sqlExecute;

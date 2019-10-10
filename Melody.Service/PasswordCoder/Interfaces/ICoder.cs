@@ -2,6 +2,6 @@
 {
   public interface ICoder
   {
-    string CodePassword(string password);
+    string CodePassword();
   }
 }
