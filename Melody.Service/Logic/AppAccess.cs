@@ -1,11 +1,7 @@
 ﻿using Melody.Service.Dbo.Interfaces;
 using Melody.Service.SqlExecuters.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Melody.Service.Logic
 {
@@ -37,7 +33,8 @@ namespace Melody.Service.Logic
           var commandString = _sqlExecute.LogIn;
           SqlCommand command = new SqlCommand(commandString, connection);
           command.Connection.Open();
-          command.ExecuteNonQuery();
+
+          return command.ExecuteNonQuery() == 1 ? true : false;
         }
       }
       catch (Exception)
@@ -45,7 +42,6 @@ namespace Melody.Service.Logic
 
         throw new Exception();
       }
-      return false;
     }
   }
 }

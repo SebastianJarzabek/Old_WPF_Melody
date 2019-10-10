@@ -2,19 +2,19 @@
 {
   public class AccessParms
   {
-    public string Login { get; set; }
-
-    public string Password { get; set; }
-
     public AccessParms(string login, string password)
     {
       this.Login = TrimParms(login);
       this.Password = TrimParms(password);
     }
 
-    private string TrimParms(string Parm)
+    public string Login { get; set; }
+
+    public string Password { get; set; }
+
+    private string TrimParms(string parm)
     {
-      return Parm.Trim();
+      return parm.Trim();
     }
   }
 }

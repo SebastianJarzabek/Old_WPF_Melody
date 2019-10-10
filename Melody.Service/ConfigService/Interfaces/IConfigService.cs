@@ -2,7 +2,6 @@
 {
   public interface IConfigService
   {
-    string connectionString { get; }
-
+    string ConnectionString { get; }
   }
 }

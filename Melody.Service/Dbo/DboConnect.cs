@@ -1,11 +1,7 @@
 ﻿using Melody.Service.ConfigService.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Melody.Service.Dbo.Interfaces;
+using System;
+using System.Data.SqlClient;
 
 namespace Melody.Service.Dbo
 {
@@ -29,7 +25,7 @@ namespace Melody.Service.Dbo
     {
       try
       {
-        using (SqlConnection connection = new SqlConnection(cfg.connectionString))
+        using (SqlConnection connection = new SqlConnection(cfg.ConnectionString))
         {
           return connection;
         }
