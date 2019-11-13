@@ -1,0 +1,1 @@
+﻿insert into  [PassToLogIn] (idEmployee, login, password) values (1,'admin','admin')
