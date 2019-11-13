@@ -4,7 +4,7 @@
   {
     public AccessParms(string login, string password)
     {
-      this.Login = TrimParms(login);
+      this.Login = this.TrimParms(login);
       this.Password = TrimParms(password);
     }
 

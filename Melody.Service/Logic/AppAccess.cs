@@ -6,21 +6,14 @@ using System.Data.SqlClient;
 namespace Melody.Service.Logic
 {
   public class AppAccess
-  {
+  { 
     private readonly IDboConnect _connect;
     private readonly ISqlExecute _sqlExecute;
 
     public AppAccess(IDboConnect dboConnect, ISqlExecute sqlExecute)
     {
-      if (dboConnect != null && sqlExecute != null)
-      {
-        this._connect = dboConnect;
-        this._sqlExecute = sqlExecute;
-      }
-      else
-      {
-        throw new ArgumentNullException();
-      }
+       _connect = dboConnect ?? throw new ArgumentNullException(nameof(IDboConnect));
+       _sqlExecute = sqlExecute ?? throw new ArgumentNullException(nameof(ISqlExecute));
     }
 
     public bool Access(AccessParms accessParms)
@@ -32,15 +25,15 @@ namespace Melody.Service.Logic
         {
           var commandString = _sqlExecute.LogIn;
           SqlCommand command = new SqlCommand(commandString, connection);
-          command.Connection.Open();
 
+          command.Connection.Open();
+          command.BeginExecuteReader();
           return command.ExecuteNonQuery() == 1 ? true : false;
         }
       }
-      catch (Exception)
+      catch (SqlException ex)
       {
-
-        throw new Exception();
+        throw new Exception(ex.Message);
       }
     }
   }

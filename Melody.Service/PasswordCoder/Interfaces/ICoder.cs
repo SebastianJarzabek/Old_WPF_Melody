@@ -3,5 +3,7 @@
   public interface ICoder
   {
     string CodePassword();
+
+    string uncodePassword();
   }
 }

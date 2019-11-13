@@ -7,33 +7,27 @@ namespace Melody.Service.Dbo
 {
   class DboConnect : IDboConnect
   {
-    private readonly IConfigServices cfg;
+    private readonly IConfigServices _configService;
 
     public DboConnect(IConfigServices configService)
     {
-      if (configService != null)
-      {
-        this.cfg = configService;
-      }
-      else
-      {
-        throw new ArgumentNullException();
-      }
+      _configService = configService ?? throw new ArgumentNullException(nameof(IDboConnect));
     }
 
     public SqlConnection Connect()
     {
       try
       {
-        ////Error 
-        using (SqlConnection connection = new SqlConnection(cfg.GetConnectionString()))
+        var pom = _configService.GetConnectionString();
+        ////Error.
+        using (SqlConnection connection = new SqlConnection(_configService.GetConnectionString().ToString()))
         {
           return connection;
         }
       }
       catch (Exception e)
       {
-        throw new Exception("SQL- connection falied." + e);
+        throw new Exception("SQL- connection fail." + e);
       }
     }
   }
