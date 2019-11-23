@@ -19,8 +19,8 @@ namespace Melody.Service.Dbo
       try
       {
         var pom = _configService.GetConnectionString();
-        ////Error.
-        using (SqlConnection connection = new SqlConnection(_configService.GetConnectionString().ToString()))
+        var TYPE = pom.GetType();
+        using (SqlConnection connection = new SqlConnection(pom))
         {
           return connection;
         }

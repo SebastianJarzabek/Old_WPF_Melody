@@ -55,7 +55,6 @@
     <Compile Include="PasswordCoder\Interfaces\ICoder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlExecuters\Interfaces\ISqlExecute.cs" />
     <Compile Include="SqlExecuters\SqlExecute.cs" />
   </ItemGroup>
   <ItemGroup>
