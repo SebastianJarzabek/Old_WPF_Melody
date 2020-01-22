@@ -49,6 +49,7 @@
     <Compile Include="ConfigService\Interfaces\IConfigServices.cs" />
     <Compile Include="Dbo\DboConnect.cs" />
     <Compile Include="Dbo\Interfaces\IDboConnect.cs" />
+    <Compile Include="Entity\Employee.cs" />
     <Compile Include="Logic\AccessParms.cs" />
     <Compile Include="Logic\AppAccess.cs" />
     <Compile Include="PasswordCoder\Coder.cs" />
@@ -64,6 +65,9 @@
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="version.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

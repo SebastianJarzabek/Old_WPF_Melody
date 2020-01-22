@@ -4,7 +4,7 @@ namespace Melody.Service.ConfigService
 {
   public class ConfigServices : IConfigServices
   {
-    private readonly string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connectionStringTest"].ConnectionString;
+    private readonly string _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MelodyDb"].ConnectionString;
 
     public string GetConnectionString()
     {
