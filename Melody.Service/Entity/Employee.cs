@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Melody.Service.Entity
+﻿namespace Melody.Service.Entity
 {
   public class Employee
   {
-    public string name { get; set; }
+    public string Name { get; set; }
 
-    public string surname { get; set; }
+    public string Surname { get; set; }
 
-    public string email { get; set; }
+    public string Email { get; set; }
 
-    public string login { get; set; }
+    public string Departament { get; set; }
 
-    public string password { get; set; }
+    public string Position { get; set; }
+
+    public Access Access { get; set; }
+
+    public Adress Adress { get; set; }
+
+    public ContactDetails ContactDetails { get; set; }
   }
 }
